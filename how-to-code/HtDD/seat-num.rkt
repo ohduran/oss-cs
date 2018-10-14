@@ -225,7 +225,7 @@
 -1 -1 2 1 #"\0"
 0 -1 1 #"\0"
 1.0 0 -1 -1 -1 -1 -1 -1 1 0 0 0 0 0 0 0 0 1.0 1.0 1.0 65 105 225 0 0 0
--1 -1           0 55 0 4 3 85
+-1 -1           0 64 0 4 3 85
 (
  #";; The first three lines of this file were inserted by DrRacket. The"
  #"y record metadata"
@@ -283,8 +283,11 @@
 0 0 24 29 1 #"\n"
 0 0 17 3 32 #"; Seat Number is Integer (0, 32]"
 0 0 24 29 1 #"\n"
-0 0 17 3 52 #"; interpretation: the number of the seat in the row."
-0 0 24 29 1 #"\n"
+0 0 17 3 75
+(
+ #"; interpretation: seat numbers in a row, the number of the seat in t"
+ #"he row."
+) 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
 0 0 24 3 1 #"("
 0 0 15 3 6 #"define"
@@ -293,7 +296,7 @@
 0 0 24 3 1 #" "
 0 0 21 3 1 #"1"
 0 0 24 3 1 #")"
-0 0 17 3 7 #"; first"
+0 0 17 3 7 #"; aisle"
 0 0 24 29 1 #"\n"
 0 0 24 3 1 #"("
 0 0 15 3 6 #"define"
@@ -302,7 +305,16 @@
 0 0 24 3 1 #" "
 0 0 21 3 2 #"32"
 0 0 24 3 1 #")"
-0 0 17 3 6 #"; last"
+0 0 17 3 7 #"; aisle"
+0 0 24 29 1 #"\n"
+0 0 24 3 1 #"("
+0 0 15 3 6 #"define"
+0 0 24 3 1 #" "
+0 0 14 3 2 #"S3"
+0 0 24 3 1 #" "
+0 0 21 3 2 #"12"
+0 0 24 3 1 #")"
+0 0 17 3 8 #"; middle"
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
 0 0 17 3 2 #"#;"
@@ -324,7 +336,7 @@
 0 0 24 29 1 #"\n"
 0 0 17 3 22 #";; Template rules used"
 0 0 24 29 1 #"\n"
-0 0 17 3 41 #";; - atomic non-distitnct: Integer (0,32]"
+0 0 17 3 41 #";; - atomic non-distitnct: Integer [1,32]"
 0 0 24 29 1 #"\n"
 0 0 24 29 1 #"\n"
 0           0
